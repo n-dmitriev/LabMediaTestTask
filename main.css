@@ -1,0 +1,152 @@
+body {
+    min-width: 320px;
+    font-family: Arial;
+    color: #000000;
+}
+
+h1, h2{
+    margin: 20px 0 30px 0;
+    font-weight: 600;
+}
+
+.content-body{
+    margin: 25px;
+}
+
+.row > div {
+    margin-bottom: 20px;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.img.img-video{
+    width: 550px;
+}
+
+.line-section {
+    margin: 50px 0 20px 0;
+    border-width: 3px;
+}
+
+.line-element {
+    margin: 20px 0;
+    border-width: 1px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+/*section navbar*/
+
+.navbar {
+    height: 50px;
+}
+
+.navbar-brand::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    left: 0;
+    top: 55px;
+    background-color: red;
+}
+
+/*section section-design*/
+
+.section-design .rectangle {
+    background: #171717;
+    padding: 20px 30px 0 30px;
+    border-radius: 5px;
+}
+
+.section-design .io {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.section-design .img-o{
+    padding: 0 15px 0 15px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-design .rect-line {
+    margin: 0 0 20px 0;
+    opacity: 0.25;
+    border-color: #FFFF;
+}
+
+/*section section-accessories*/
+
+.section-accessories .top-line::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+}
+
+/*media*/
+@media(max-width: 1000px) {
+    .img.img-video {
+        width: 465px;
+    }
+}
+
+@media(min-width: 800px) {
+    .row > div {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 720px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 540px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .content-body{
+        margin: 15px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .text .text-min {
+        font-size: 12px;
+    }
+
+    .navbar-brand::after{
+        display: none;
+    }
+}
